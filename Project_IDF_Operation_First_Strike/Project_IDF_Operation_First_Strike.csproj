@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AMAN.cs" />
+    <Compile Include="List_of _ttack_tools.cs" />
+    <Compile Include="TERRORIST.cs" />
+    <Compile Include="FIRE.cs" />
+    <Compile Include="HAMAS.cs" />
+    <Compile Include="IDF.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

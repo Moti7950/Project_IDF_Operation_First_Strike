@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_IDF_Operation_First_Strike
 {
-    internal class Class1
+    internal class IDF
     {
     }
 }
