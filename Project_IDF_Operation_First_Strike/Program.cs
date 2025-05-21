@@ -11,6 +11,7 @@ namespace Project_IDF_Operation_First_Strike
  
         static void Main()
         {
+            Console.WriteLine("Test");
         }
     }
 }
