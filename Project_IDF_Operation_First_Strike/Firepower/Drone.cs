@@ -7,18 +7,23 @@ class Drone: StrikeWeapon
     }
     public override void Strike(int amount)
     {
-        if (amount > 1)
+        if (amount <= 0)
         {
-            Console.WriteLine("can not strike more then  once at the same time");
+            Console.WriteLine("must be a positive number");
         }
-        if (amount > this.AmmunitionCapacity )
+
+        else if (amount > this.AmmunitionCapacity)
         {
             Console.WriteLine("you have no  Ammunition to complete this strike");
         }
+        else if (amount > 1)
+        {
+            Console.WriteLine("can not strike more then one time at once");
+        }      
         
         else
         {
-            Console.WriteLine($"{nameOfWeapon} strikes a {EffectiveAgainst}  target {amount} of times!");
+            Console.WriteLine($"{nameOfWeapon} is unleashing {amount} powerful strikes on an {EffectiveAgainst} target!");
             this.AmmunitionCapacity -= amount;
         }
     }
