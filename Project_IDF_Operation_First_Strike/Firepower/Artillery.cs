@@ -9,17 +9,22 @@ class Artillery:StrikeWeapon
     }
     public override void Strike(int amount)
     {
-        if (amount >3)
+        if (amount <= 0)
         {
-            Console.WriteLine("can not strike more then three times at the same time");
+            Console.WriteLine("must be a positive number");
         }
-        if (this.AmmunitionCapacity <= 0)
+        else if (amount >3)
+        {
+            Console.WriteLine("can not strike more then three times at once");
+        }
+        else if (amount > this.AmmunitionCapacity )
         {
             Console.WriteLine("you have no a Ammunition to complete this strike");
         }
+        
         else
         {
-            Console.WriteLine($"{nameOfWeapon} strikes a {EffectiveAgainst} {amount} of times target {amount} of times!");
+            Console.WriteLine($"{nameOfWeapon} is unleashing {amount} powerful strikes on an {EffectiveAgainst} target!");
             this.AmmunitionCapacity -= amount;
         }
             
