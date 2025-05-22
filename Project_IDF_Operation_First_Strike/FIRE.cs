@@ -1,3 +1,3 @@
-﻿class FIRE
+﻿public class FIRE
 {
 }
