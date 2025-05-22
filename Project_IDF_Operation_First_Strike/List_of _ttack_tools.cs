@@ -1,4 +1,4 @@
-﻿public class List_of_ttack_tools
+﻿class List_of_ttack_tools
 { 
 }
 
