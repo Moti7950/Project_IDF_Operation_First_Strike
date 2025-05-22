@@ -47,9 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AMAN.cs" />
+    <Compile Include="Firepower\Artillery.cs" />
+    <Compile Include="Firepower\Drone.cs" />
+    <Compile Include="Firepower\FighterJet1.cs" />
+    <Compile Include="Firepower\StrikeWeapon.cs" />
     <Compile Include="List_of _ttack_tools.cs" />
     <Compile Include="TERRORIST.cs" />
-    <Compile Include="FIRE.cs" />
     <Compile Include="HAMAS.cs" />
     <Compile Include="IDF.cs" />
     <Compile Include="Program.cs" />
@@ -76,5 +79,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
