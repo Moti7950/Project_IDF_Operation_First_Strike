@@ -7,5 +7,6 @@
     { }
 
     public void LocaitionOfTarget(string Locaition, string TimeStamp_Info)
-    { }
+    { 
+    }
 }
