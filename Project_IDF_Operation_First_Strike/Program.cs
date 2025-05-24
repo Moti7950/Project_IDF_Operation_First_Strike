@@ -7,7 +7,7 @@ namespace Project_IDF_Operation_First_Strike
 
         static void Main()
         {
-            Console.WriteLine("Test");
+            Console.WriteLine("New");
             Dictionary<string, TerroristData> List_TR = new Dictionary<string, TerroristData>();
             TerroristData T1 = new TerroristData("Mohamad",9,true,"M16");
             TerroristData T2 = new TerroristData("Ali", 6, true, "kalatch");
