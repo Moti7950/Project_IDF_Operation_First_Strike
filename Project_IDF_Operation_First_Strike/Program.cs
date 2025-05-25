@@ -10,7 +10,7 @@ namespace Project_IDF_Operation_First_Strike
             Data x = new Data();
             x.HamasData();
             Console.WriteLine("Plesa select:");
-            string input = Console.WriteLine();
+            string input = Console.ReadLine();
             switch (input)
             {
                 case "a":

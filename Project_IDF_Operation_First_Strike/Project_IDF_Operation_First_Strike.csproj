@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Data-spy.cs" />
     <Compile Include="Hamas.cs" />
+    <Compile Include="Hamas\Location.cs" />
     <Compile Include="Hamas\Wepens_Terorist.cs" />
     <Compile Include="Intel.cs" />
     <Compile Include="strike manager.cs" />
