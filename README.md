@@ -8,7 +8,7 @@ Aman provides the intelligence for the strike, while the strike units provide th
 In the case of Hamas, we have a list of terrorists and a list of target locations in gasa.
 
 
-		CLASS IDF 
+CLASS IDF 
 details about the organization
 
 CLASS 	FIRE
