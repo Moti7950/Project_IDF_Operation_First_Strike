@@ -5,22 +5,55 @@ namespace Project_IDF_Operation_First_Strike
     internal static class Program 
     {
 
+       static void Denger()
+        { }
+        
+        static void UserInterface()
+        {
+            Data x = new Data();
+            x.HamasData();
+           
+            
+            bool boli = true;
+            do
+            {
+                Console.WriteLine(
+                        "a -  \n"+
+                        "b - \n"+
+                        "c - \n"+
+                        "d - \n"+
+                        "e - Enter for Exit."
+                        );
+                string input = Console.ReadLine();
+                switch (input)
+                {
+                    case "a":
+                        ListAttak listAttak = new ListAttak();
+                        Console.WriteLine(listAttak);
+                        break;
+                    case "b":
+                        //whe can attake
+                        break;
+                    case "c":
+                        //cheoos a terorist to attak
+                        break;
+                    case "d":
+                        //
+                        break;
+                    case "e":
+                        boli = false;
+                        break;
+
+                }
+            }
+            while (boli == true);
+
+
+        }
+        
         static void Main()
         {
-            Console.WriteLine("Test");
-            Dictionary<string, TerroristData> List_TR = new Dictionary<string, TerroristData>();
-            TerroristData T1 = new TerroristData("Mohamad",9,true,"M16");
-            TerroristData T2 = new TerroristData("Ali", 6, true, "kalatch");
-            TerroristData T3 = new TerroristData("Abo Raed", 1, true, "kalatch");
-            List_TR.Add("Mohamaad",T1);
-            List_TR.Add("Ali",T2);
-            List_TR.Add("Abo Raed",T3);
-            foreach (var kvp in List_TR)
-            {
-                Console.WriteLine(kvp.Key + ": " +kvp.Value.getname());
-            }
-
-
+            UserInterface();
         }
     }
 }
