@@ -21,7 +21,7 @@ namespace Project_IDF_Operation_First_Strike
             List_TR.Add("Abo Raed",T3);
             foreach (var kvp in List_TR)
             {
-                Console.WriteLine(kvp.Key + ": " +kvp.Value.getname());
+                Console.WriteLine(kvp.Key + ": " +kvp.Value.getName());
             }
 
 
