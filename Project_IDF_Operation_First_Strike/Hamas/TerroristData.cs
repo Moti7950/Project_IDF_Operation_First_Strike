@@ -47,7 +47,7 @@ public class TerroristData
         { 
             this._status = statusi; 
         }
-        public bool getstatus(bool statusi)
+        public bool getstatus()
         {
             return this._status;
         }

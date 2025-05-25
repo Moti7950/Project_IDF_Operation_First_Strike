@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-abstract class StrikeWeapon
+ public abstract class StrikeWeapon
 {
     public string nameOfWeapon;
     public int AmmunitionCapacity;

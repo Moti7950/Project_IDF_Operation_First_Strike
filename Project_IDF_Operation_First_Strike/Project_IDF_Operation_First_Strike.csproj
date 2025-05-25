@@ -52,7 +52,6 @@
     <Compile Include="Hamas\Location.cs" />
     <Compile Include="Hamas\Wepens_Terorist.cs" />
     <Compile Include="Intel.cs" />
-    <Compile Include="strike manager.cs" />
     <Compile Include="Strike.cs" />
     <Compile Include="strikeManager.cs" />
     <Compile Include="Aman\Data.cs" />
