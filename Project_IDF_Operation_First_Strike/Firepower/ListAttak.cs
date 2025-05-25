@@ -24,4 +24,12 @@ public class ListAttak
         return result;
 
     }
+    public StrikeWeapon GetStrikeUnit(string type)
+    {
+        if (ListAt.ContainsKey(type))
+            return ListAt[type];
+        else
+            return null;
+    }
+
 }
