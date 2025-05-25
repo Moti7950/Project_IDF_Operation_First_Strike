@@ -28,14 +28,21 @@ namespace Project_IDF_Operation_First_Strike
                 switch (input)
                 {
                     case "a":
-                        ListAttak listAttak = new ListAttak();
-                        Console.WriteLine(listAttak);
+                        
                         break;
                     case "b":
                         //whe can attake
-                        break;
+                        //ListAttak listAttak = new ListAttak();
+                        //Console.WriteLine(listAttak);
+                        //break;
+
                     case "c":
                         //cheoos a terorist to attak
+                        //knafe = 1
+                        // gun = 2
+                        //m16 = 3
+                        //AK47 = 3
+
                         break;
                     case "d":
                         //
@@ -43,6 +50,7 @@ namespace Project_IDF_Operation_First_Strike
                     case "e":
                         boli = false;
                         break;
+
 
                 }
             }
