@@ -3,11 +3,13 @@
 class ListofTerrorist
 {
     private Dictionary<string, TerroristData> List_TR = new Dictionary<string, TerroristData>();
+    
     public ListofTerrorist()
     {
-        TerroristData T1 = new TerroristData("Mohamad", 9, true, "M16","Home");
-        TerroristData T2 = new TerroristData("Ali", 6, true, "kalatch","Tenels");
-        TerroristData T3 = new TerroristData("Abo Raed", 1, true, "kalatch", "USA");
+        Wepens_Terorist wep_TR = new Wepens_Terorist();
+        TerroristData T1 = new TerroristData("Mohamad", 9, true, wep_TR.randomeWeapons(), "Home");
+        TerroristData T2 = new TerroristData("Ali", 6, true, wep_TR.randomeWeapons(), "Tenels");
+        TerroristData T3 = new TerroristData("Abo Raed", 1, true, wep_TR.randomeWeapons(), "USA");
         List_TR.Add("Mohamaad", T1);
         List_TR.Add("Ali", T2);
         List_TR.Add("Abo Raed", T3);
@@ -15,9 +17,12 @@ class ListofTerrorist
 
     public void getInfo()
     {
+        int num = 1;
         foreach (var kvp in List_TR)
         {
-            System.Console.WriteLine(kvp.Key +": "+kvp.Value);
+            System.Console.WriteLine($"{num + ": "}{kvp.Key} : {kvp.Value}");
+            num +=1;
+
         }
     }
 }

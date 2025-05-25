@@ -72,5 +72,11 @@ public class TerroristData
         return this._location;
         }
 
+    public override string ToString()
+    {
+        return $"Name: {_name}, Rank: {_rank}, Status: {_status}, Weapon: {_weapons}, Location: {_location}";
+    }
+
+
 }
 

@@ -11,11 +11,6 @@ abstract class StrikeWeapon
         this.nameOfWeapon = nameOfWeapon;
         this.AmmunitionCapacity = AmmunitionCapacity;
         this.EffectiveAgainst = EffectiveAgainst;
-
-        
-
-
-
     }
     abstract public void Strike(int amount);
     
