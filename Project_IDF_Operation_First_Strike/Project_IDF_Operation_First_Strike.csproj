@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data-spy.cs" />
+    <Compile Include="Firepower\ListAttak.cs" />
     <Compile Include="Hamas.cs" />
     <Compile Include="Hamas\Location.cs" />
     <Compile Include="Hamas\Wepens_Terorist.cs" />

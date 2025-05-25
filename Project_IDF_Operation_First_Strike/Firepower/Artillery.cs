@@ -29,4 +29,9 @@ class Artillery:StrikeWeapon
         }
             
     }
+    public override string ToString()
+    {
+        return $"{nameOfWeapon} - Ammo: {AmmunitionCapacity}, Effective Against: {EffectiveAgainst}";
+    }
+
 }

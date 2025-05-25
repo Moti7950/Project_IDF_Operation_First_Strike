@@ -10,7 +10,7 @@ public class Location
     Random x = new Random();
     public string randomeWeapons()
     {
-        string[] loction = { "open areas", "vehicles", "buildings"};
+        string[] loction = { "open areas", "people, vehicles", "buildings"};
         string choseloction = loction[x.Next(loction.Length)];
         return choseloction;
     }

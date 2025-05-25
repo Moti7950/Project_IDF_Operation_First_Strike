@@ -5,28 +5,48 @@ namespace Project_IDF_Operation_First_Strike
     internal static class Program 
     {
 
-       static void UserInterface()
+       static void Denger()
+        { }
+        
+        static void UserInterface()
         {
             Data x = new Data();
             x.HamasData();
-            Console.WriteLine("Plesa select:");
-            string input = Console.ReadLine();
-            switch (input)
+           
+            
+            bool boli = true;
+            do
             {
-                case "a":
-                    //serch the denger terorist
-                    break;
-                case "b":
-                    //whe can attake
-                    break;
-                case "c":
-                    //cheoos a terorist to attak
-                    break;
-                case "d":
-                    //
-                    break;
+                Console.WriteLine(
+                        "a -  \n"+
+                        "b - \n"+
+                        "c - \n"+
+                        "d - \n"+
+                        "e - Enter for Exit."
+                        );
+                string input = Console.ReadLine();
+                switch (input)
+                {
+                    case "a":
+                        ListAttak listAttak = new ListAttak();
+                        Console.WriteLine(listAttak);
+                        break;
+                    case "b":
+                        //whe can attake
+                        break;
+                    case "c":
+                        //cheoos a terorist to attak
+                        break;
+                    case "d":
+                        //
+                        break;
+                    case "e":
+                        boli = false;
+                        break;
 
+                }
             }
+            while (boli == true);
 
 
         }

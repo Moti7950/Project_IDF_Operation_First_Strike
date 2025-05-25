@@ -1,8 +1,8 @@
 ﻿using System;
 
-class FighterJet:StrikeWeapon
+class FighterJet : StrikeWeapon
 {
-       public FighterJet():base("FitherJet",8, "buildings")
+    public FighterJet() : base("FitherJet", 8, "buildings")
     {
         Console.WriteLine("operated by pilot");
     }
@@ -26,7 +26,13 @@ class FighterJet:StrikeWeapon
             Console.WriteLine($"{nameOfWeapon} is unleashing {amount} powerful strikes on an {EffectiveAgainst} target!");
             this.AmmunitionCapacity -= amount;
         }
-
     }
+    public override string ToString()
+    {
+        return $"{nameOfWeapon} - Ammo: {AmmunitionCapacity}, Effective Against: {EffectiveAgainst}";
+    }
+
 }
+
+
 
