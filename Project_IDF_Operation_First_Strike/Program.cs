@@ -135,7 +135,7 @@ namespace Project_IDF_Operation_First_Strike
                         }
                         else
                         {
-                            Console.WriteLine("❌ Not enough ammunition. Strike aborted.");
+                            Console.WriteLine("Not enough ammunition. Strike aborted.");
                         }
 
                         break;
