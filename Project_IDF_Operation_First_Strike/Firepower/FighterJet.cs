@@ -2,7 +2,7 @@
 
 class FighterJet:StrikeWeapon
 {
-       public FighterJet():base("FitherJet",8, "buildings")
+       public FighterJet():base("FitherJet",4500,8, "building")
     {
         Console.WriteLine("operated by pilot");
     }
@@ -21,10 +21,15 @@ class FighterJet:StrikeWeapon
         {
             Console.WriteLine("can not strike more then three times at once");
         }
+        else if (this.fuelSuplly < (500 * amount))
+        {
+            Console.WriteLine("you have no  fuel to complete this strike");
+        }
         else
         {
             Console.WriteLine($"{nameOfWeapon} is unleashing {amount} powerful strikes on an {EffectiveAgainst} target!");
             this.AmmunitionCapacity -= amount;
+            this.fuelSuplly -= 500;
         }
 
     }

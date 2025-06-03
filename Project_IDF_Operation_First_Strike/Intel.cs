@@ -5,7 +5,7 @@ class Intel
 {
     public TerroristData Terrorist { get; set; }
     public string Location { get; set; }
-    public DateTime Timestamp { get; set; }
+    public DateTime Timestamp { get; set;}
     public static List<Intel> listOfIntel = new List<Intel>();
 
     public Intel(TerroristData terrorist, string location, DateTime timestamp)

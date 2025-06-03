@@ -3,7 +3,7 @@ using System.Drawing;
 
 class Artillery:StrikeWeapon
 {
-    public Artillery():base("Artillery",40, "open areas")
+    public Artillery():base("Artillery",100,40, "open area")
     {
 
     }
@@ -15,17 +15,22 @@ class Artillery:StrikeWeapon
         }
         else if (amount >3)
         {
-            Console.WriteLine("can not strike more then three times at once");
+            Console.WriteLine("cannot strike more then three times at once");
         }
         else if (amount > this.AmmunitionCapacity )
         {
-            Console.WriteLine("you have no a Ammunition to complete this strike");
+            Console.WriteLine("You don't have enough ammunition to complete this strike.");
         }
-        
+        else if (this.fuelSuplly < (40 * amount))
+        {
+            Console.WriteLine("you have no  fuel to complete this strike");
+        }
+
         else
         {
             Console.WriteLine($"{nameOfWeapon} is unleashing {amount} powerful strikes on an {EffectiveAgainst} target!");
             this.AmmunitionCapacity -= amount;
+            this.fuelSuplly -= 40;
         }
             
     }

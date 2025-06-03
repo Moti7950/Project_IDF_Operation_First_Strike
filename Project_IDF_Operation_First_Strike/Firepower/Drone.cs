@@ -2,7 +2,7 @@
 
 class Drone: StrikeWeapon
 {
-    public Drone() : base("Drone",3 , "people, vehicles")
+    public Drone(string name) : base("Drone",250,3 , "vehicle")
     {
     }
     public override void Strike(int amount)
@@ -19,12 +19,18 @@ class Drone: StrikeWeapon
         else if (amount > 1)
         {
             Console.WriteLine("can not strike more then one time at once");
-        }      
-        
+        }
+        else if (this.fuelSuplly < 30)
+        {
+            Console.WriteLine("you have no  fuel to complete this strike");
+        }
+
+         
         else
         {
             Console.WriteLine($"{nameOfWeapon} is unleashing {amount} powerful strikes on an {EffectiveAgainst} target!");
             this.AmmunitionCapacity -= amount;
+            this.fuelSuplly -= 30;
         }
     }
 }
